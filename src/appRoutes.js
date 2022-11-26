@@ -3,6 +3,8 @@ import Home from "./pages/home";
 import Authors from "./pages/authors";
 import {Container, Nav, Navbar} from "react-bootstrap";
 import Books from "./pages/books";
+import BookForm from "./pages/book-form";
+import AuthorForm from "./pages/author-form";
 
 const AppRoutes = () => {
     return (
@@ -22,7 +24,9 @@ const AppRoutes = () => {
             <Routes>
                 <Route element={<Home/>} path="/"/>
                 <Route element={<Authors/>} path="/authors"/>
+                <Route element={<AuthorForm/>} path="/authors/new"/>
                 <Route element={<Books/>} path="/books"/>
+                <Route element={<BookForm/>} path="/books/new"/>
             </Routes>
         </BrowserRouter>
     )
